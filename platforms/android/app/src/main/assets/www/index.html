@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Bluetooth APP</title>
+    </head>
+    <body>
+        <div class="app">
+            <div id="mainPage">
+                <p style="text-align:center; padding-top: 20px;">
+                    Elige un dispositivo
+                </p>
+                <ul id="deviceList">
+                </ul>
+                <button id="buscar">Buscar</button>
+                <button id="disconnect">Desconectar</button>
+            </div>
+
+            <div id="detailPage">
+                <p style="text-align:center; padding-top: 20px;">
+                    Conectado
+                </p>
+                 <h2>BLE Heart Rate Demo</h2>
+                 <h1 id="beatsPerMinute">...</h1>
+                 <h1 id="bp">...</h1>
+                 <BUTTON id="medir">Medir</BUTTON>
+                 <BUTTON id="leer">leer</BUTTON>
+                 <BUTTON id="stop">Parar</BUTTON>
+                 <BUTTON id="volver">Volver</BUTTON>
+                 <div id="resultDiv"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
